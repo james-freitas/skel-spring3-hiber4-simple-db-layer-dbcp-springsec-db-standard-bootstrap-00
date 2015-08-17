@@ -1,0 +1,36 @@
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+	<definition name="main" template="/views/templates/main.jsp">
+		<put-attribute name="titulo" value="Sphidb" />
+		<put-attribute name="cabecalho" value="/views/templates/cabecalho.jsp" />
+		<put-attribute name="rodape" value="/views/templates/rodape.jsp" />
+	</definition>
+
+	<definition name="index" extends="main">
+		<put-attribute name="conteudo" value="/views/index.jsp"></put-attribute>
+	</definition>
+
+	<definition name="teste" extends="main">
+		<put-attribute name="conteudo" value="/views/teste.jsp"></put-attribute>
+	</definition>
+
+	<definition name="hello" extends="main">
+		<put-attribute name="conteudo" value="/views/world.jsp"></put-attribute>
+	</definition>
+
+	<definition name="login" template="/views/login.jsp">
+		<put-attribute name="titulo" value="Login"/>
+	</definition>
+
+	<definition name="logout" template="/views/logout.jsp">
+		<put-attribute name="titulo" value="logout" />
+	</definition>
+	
+	<definition name="403" template="/views/403.jsp">
+		<put-attribute name="titulo" value="403" />
+	</definition>
+	
+
+</tiles-definitions>
