@@ -3,6 +3,14 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
+	<!-- Allows urls such /admin/services -->
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>/**</url-pattern>
+			<el-ignored>false</el-ignored>
+		</jsp-property-group>
+	</jsp-config>
+
     <!-- Spring servlet that will handle the requests-->
     <servlet>
         <servlet-name>dispatcher</servlet-name>
